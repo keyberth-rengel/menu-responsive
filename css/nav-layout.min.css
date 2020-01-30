@@ -1,0 +1,85 @@
+html {
+  font-size: 62.5%;
+}
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 901;
+  padding-left: 10px;
+  line-height: 4.4rem;
+  background: #fff;
+  color: #a69a94;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  line-height: 4.4rem;
+}
+.nav-button,
+.nav-close {
+  position: fixed;
+  top: 0;
+  width: 2.4rem;
+  height: 4.4rem;
+  overflow: hidden;
+  z-index: 902;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 4.4rem;
+  background: #fff;
+  color: #a69a94;
+}
+.nav-button:before,
+.nav-close:before {
+  display: block;
+  text-align: center;
+}
+.nav-button {
+  display: block;
+  right: 1rem;
+  font-size: 1.7rem;
+}
+.nav-button:before {
+  content: "\E003";
+}
+.nav-close {
+  display: none;
+  right: 4rem;
+  font-size: 1.9rem;
+}
+.nav-close:before {
+  content: "\E002";
+}
+.nav {
+  padding-top: 0;
+  line-height: 4.4rem;
+  background: #fff;
+}
+.nav ul {
+  display: block;
+  position: relative;
+  zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  border-top: 1px solid #59544f;
+  cursor: pointer;
+}
+.nav li.nav-active > a,
+.nav li:hover > a {
+  background: #f2f2f2;
+}
+.nav a,
+.nav a:active,
+.nav a:hover,
+.nav a:visited {
+  border-radius: 6px;
+  padding: 0 15px 1px;
+  color: #8c827d;
+  text-decoration: none;
+}
